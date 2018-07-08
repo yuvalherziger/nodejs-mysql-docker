@@ -7,8 +7,5 @@ up-no-cache:
 	docker-compose build --no-cache && \
 	docker-compose up -d --force-recreate
 
-clean-untagged:
-	docker images | awk '$2 == "<none>"{print($3)}'  | xargs docker rmi
-
 stop:
 	docker-compose stop
