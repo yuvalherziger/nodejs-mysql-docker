@@ -1,0 +1,21 @@
+{
+  "name": "nodejs-docker",
+  "version": "1.0.0",
+  "description": "Node.js + Docker",
+  "main": "server.js",
+  "author": "Yuval Herziger",
+  "license": "MIT",
+  "scripts": {
+    "start": "pm2 start pm2/config.json",
+    "dev": "pm2-dev start pm2/config.json",
+    "start-docker": "pm2-docker start pm2/config.json"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.3",
+    "debug": "^3.1.0",
+    "express": "4.16.3",
+    "morgan": "^1.9.0",
+    "mysql": "^2.15.0"
+  }
+}

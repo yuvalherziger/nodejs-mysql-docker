@@ -1,0 +1,4 @@
+CREATE DATABASE IF NOT EXISTS app_db;
+GRANT ALL PRIVILEGES on app_db.*
+TO 'yuvalherziger'@'%' IDENTIFIED BY 'comeon189'
+WITH GRANT OPTION;

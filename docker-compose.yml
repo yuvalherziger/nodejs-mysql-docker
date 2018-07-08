@@ -1,0 +1,19 @@
+version: '2.1'
+
+services:
+    mysql:
+        build: ./db_bootstrap
+        environment:
+            - MYSQL_ALLOW_EMPTY_PASSWORD=yes
+        healthcheck:
+            test: "exit 0"
+    
+    nodejs:
+        build: .
+        depends_on:
+            mysql:
+                condition: service_healthy
+        entrypoint:
+            - /usr/local/bin/entrypoint.sh
+        ports:
+            - "3000:3000"
