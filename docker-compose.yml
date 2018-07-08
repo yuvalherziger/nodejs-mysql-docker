@@ -3,6 +3,8 @@ version: '2.1'
 services:
     mysql:
         build: ./db_bootstrap
+        ports:
+            - 8083:3306
         environment:
             - MYSQL_ALLOW_EMPTY_PASSWORD=yes
         healthcheck:

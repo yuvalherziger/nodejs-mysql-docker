@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Node.js + Docker",
   "main": "server.js",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/yuvalherziger/nodejs-mysql-docker"
+  },
   "author": "Yuval Herziger",
   "license": "MIT",
   "scripts": {
