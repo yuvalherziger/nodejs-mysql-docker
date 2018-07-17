@@ -1,6 +1,6 @@
 # Node.js + MySQL on Docker
 
-Just a quicks tart template for a Node.js application with MySQL, built on Docker.
+Just a quick-start template for a Node.js application with MySQL, built on Docker.
 
 # Quick Start
 
